@@ -1,0 +1,52 @@
+.landing-section{
+  .content{
+    width:1000px;
+    height:100%;
+    margin:0 auto;
+    text-align:center;
+    padding-top:180px;
+    .logo{
+      display:block;
+      margin:0 auto;
+    }
+    .h1{
+      color:#fff;
+      font-size:26px;
+      margin-top:18px;
+      font-family:didot-bold;
+    }
+    .h2{
+      color:#fff;
+      font-size:10px;
+      font-family:didot-bold;
+    }
+    .social-icons{
+      margin-top:50px;
+      .qq,.weixin,.xinlang{
+        width:25px;
+        height:25px;
+        line-height:25px;
+        display:inline-block;
+        margin:0 3px;
+      }
+      .qq{
+        background:url(../img/top_nav/qq1.png);
+        &:hover{
+          background:url(../img/top_nav/qq.png);
+        }
+      }
+      .xinlang{
+        background:url(../img/top_nav/xinlang1.png);
+        &:hover{
+          background:url(../img/top_nav/xinlang.png);
+        }
+      }
+      .weixin{
+        background:url(../img/top_nav/weixin1.png);
+        &:hover{
+          background:url(../img/top_nav/weixin.png);
+        }
+      }
+    }
+  }// NED .content
+}// END .landing-section

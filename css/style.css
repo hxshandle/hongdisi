@@ -1,3 +1,7 @@
+@font-face {
+  font-family: didot-bold;
+  src: url(../fonts/Didot_Bold.ttf); }
+
 .row {
   width: 100%; }
 
@@ -7,6 +11,9 @@
     width: 1000px;
     height: 100%;
     margin: 0 auto; }
+
+.img-bg {
+  display: none; }
 
 .top-nav {
   height: 77px;
@@ -75,3 +82,42 @@
       height: 23px;
       line-height: 23px;
       background: url(../img/top_nav/search_icon.png); }
+
+.landing-section .content {
+  width: 1000px;
+  height: 100%;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 180px; }
+  .landing-section .content .logo {
+    display: block;
+    margin: 0 auto; }
+  .landing-section .content .h1 {
+    color: #fff;
+    font-size: 26px;
+    margin-top: 18px;
+    font-family: didot-bold; }
+  .landing-section .content .h2 {
+    color: #fff;
+    font-size: 10px;
+    font-family: didot-bold; }
+  .landing-section .content .social-icons {
+    margin-top: 50px; }
+    .landing-section .content .social-icons .qq, .landing-section .content .social-icons .weixin, .landing-section .content .social-icons .xinlang {
+      width: 25px;
+      height: 25px;
+      line-height: 25px;
+      display: inline-block;
+      margin: 0 3px; }
+    .landing-section .content .social-icons .qq {
+      background: url(../img/top_nav/qq1.png); }
+      .landing-section .content .social-icons .qq:hover {
+        background: url(../img/top_nav/qq.png); }
+    .landing-section .content .social-icons .xinlang {
+      background: url(../img/top_nav/xinlang1.png); }
+      .landing-section .content .social-icons .xinlang:hover {
+        background: url(../img/top_nav/xinlang.png); }
+    .landing-section .content .social-icons .weixin {
+      background: url(../img/top_nav/weixin1.png); }
+      .landing-section .content .social-icons .weixin:hover {
+        background: url(../img/top_nav/weixin.png); }

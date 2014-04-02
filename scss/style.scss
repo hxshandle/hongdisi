@@ -1,3 +1,8 @@
+@font-face {
+  font-family: didot-bold;
+  src: url(../fonts/Didot_Bold.ttf);
+}
+
 .row{
   width:100%;
 }
@@ -9,5 +14,9 @@
     margin:0 auto;
   }
 }
+.img-bg{
+  display:none;
+}
 
-@import "_top_nav"
+@import "_top_nav";
+@import "_landing";
