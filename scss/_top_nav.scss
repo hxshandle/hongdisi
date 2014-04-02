@@ -1,0 +1,90 @@
+.top-nav{
+  height: 77px;
+  position:fixed;
+  background:#b2975b;
+  width:100%;
+
+  .brand{
+    margin-left:50px;
+    float:left;
+  }
+  .top-menu{
+    list-style:none;
+    margin:0;
+    padding:0;
+    float:left;
+    li{
+      list-style: none;
+      display: inline-block;
+      line-height: 77px;
+      margin-left:50px;
+      a{
+        color:#fff;
+        font-size:12px;
+        text-decoration: none;
+        &:hover{
+          text-decoration: underline;
+        }
+      }
+    }// END li
+  }// END .top-menu
+  .icons{
+    list-style:none;
+    margin:0;
+    padding:0;
+    float:right;
+    
+    li{
+      list-style: none;
+      display: inline-block;
+      line-height: 77px;
+      a{
+        display: inline-block;
+        width: 25px;
+        height: 25px;
+        margin-left:6px;
+      }// END a
+      .qq{
+        background:url(../img/top_nav/qq1.png);
+        &:hover{
+          background:url(../img/top_nav/qq.png);
+        }
+      }
+      .xinlang{
+        background:url(../img/top_nav/xinlang1.png);
+        &:hover{
+          background:url(../img/top_nav/xinlang.png);
+        }
+      }
+      .weixin{
+        background:url(../img/top_nav/weixin1.png);
+        &:hover{
+          background:url(../img/top_nav/weixin.png);
+        }
+      }
+    }// NED li
+  }// END .icons
+
+  .search{
+    float:right;
+    display: inline-block;
+    height: 77px;
+    margin-left:24px;
+    margin-right:60px;
+    .search-box{
+      margin-right:10px;
+      width:0px;
+      border:0px;
+    }
+    .search-icon{
+      display: inline-block;
+      margin-top:19px;
+      width: 25px;
+      height: 23px;
+      line-height: 23px;
+      background:url(../img/top_nav/search_icon.png);
+    }
+
+  }//END .search
+
+}// END .top-nav

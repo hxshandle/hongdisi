@@ -1,0 +1,13 @@
+.row{
+  width:100%;
+}
+.page-section{
+  height:823px;
+  .content{
+    width:1000px;
+    height: 100%;
+    margin:0 auto;
+  }
+}
+
+@import "_top_nav"

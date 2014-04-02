@@ -1,0 +1,77 @@
+.row {
+  width: 100%; }
+
+.page-section {
+  height: 823px; }
+  .page-section .content {
+    width: 1000px;
+    height: 100%;
+    margin: 0 auto; }
+
+.top-nav {
+  height: 77px;
+  position: fixed;
+  background: #b2975b;
+  width: 100%; }
+  .top-nav .brand {
+    margin-left: 50px;
+    float: left; }
+  .top-nav .top-menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    float: left; }
+    .top-nav .top-menu li {
+      list-style: none;
+      display: inline-block;
+      line-height: 77px;
+      margin-left: 50px; }
+      .top-nav .top-menu li a {
+        color: #fff;
+        font-size: 12px;
+        text-decoration: none; }
+        .top-nav .top-menu li a:hover {
+          text-decoration: underline; }
+  .top-nav .icons {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    float: right; }
+    .top-nav .icons li {
+      list-style: none;
+      display: inline-block;
+      line-height: 77px; }
+      .top-nav .icons li a {
+        display: inline-block;
+        width: 25px;
+        height: 25px;
+        margin-left: 6px; }
+      .top-nav .icons li .qq {
+        background: url(../img/top_nav/qq1.png); }
+        .top-nav .icons li .qq:hover {
+          background: url(../img/top_nav/qq.png); }
+      .top-nav .icons li .xinlang {
+        background: url(../img/top_nav/xinlang1.png); }
+        .top-nav .icons li .xinlang:hover {
+          background: url(../img/top_nav/xinlang.png); }
+      .top-nav .icons li .weixin {
+        background: url(../img/top_nav/weixin1.png); }
+        .top-nav .icons li .weixin:hover {
+          background: url(../img/top_nav/weixin.png); }
+  .top-nav .search {
+    float: right;
+    display: inline-block;
+    height: 77px;
+    margin-left: 24px;
+    margin-right: 60px; }
+    .top-nav .search .search-box {
+      margin-right: 10px;
+      width: 0px;
+      border: 0px; }
+    .top-nav .search .search-icon {
+      display: inline-block;
+      margin-top: 19px;
+      width: 25px;
+      height: 23px;
+      line-height: 23px;
+      background: url(../img/top_nav/search_icon.png); }
