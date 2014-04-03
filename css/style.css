@@ -5,6 +5,11 @@
 .row {
   width: 100%; }
 
+ul, li {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
 .page-section {
   height: 823px; }
   .page-section .content {
@@ -19,7 +24,9 @@
   height: 77px;
   position: fixed;
   background: #b2975b;
-  width: 100%; }
+  width: 100%;
+  top: 0px;
+  display: none; }
   .top-nav .brand {
     margin-left: 50px;
     float: left; }
@@ -121,3 +128,44 @@
       background: url(../img/top_nav/weixin1.png); }
       .landing-section .content .social-icons .weixin:hover {
         background: url(../img/top_nav/weixin.png); }
+
+.landing_profile .content .header {
+  padding-top: 160px; }
+  .landing_profile .content .header ul {
+    border-top: 1px solid #b2975b; }
+    .landing_profile .content .header ul li {
+      display: table-cell;
+      vertical-align: middle;
+      height: 156px; }
+    .landing_profile .content .header ul .col2 .wrapper {
+      padding-left: 10px;
+      width: 324px;
+      border-right: 1px solid #b2975b; }
+      .landing_profile .content .header ul .col2 .wrapper .h1 {
+        font-size: 12px; }
+      .landing_profile .content .header ul .col2 .wrapper .h2 {
+        font-size: 10px; }
+      .landing_profile .content .header ul .col2 .wrapper img {
+        margin-top: 20px; }
+    .landing_profile .content .header ul .col3 {
+      padding-left: 40px; }
+      .landing_profile .content .header ul .col3 .nav {
+        display: inline-block;
+        height: 156px;
+        color: #666;
+        float: left;
+        margin-left: 55px; }
+        .landing_profile .content .header ul .col3 .nav span {
+          display: inline-block;
+          padding-left: 8px;
+          padding-right: 8px;
+          font-size: 12px;
+          cursor: pointer; }
+        .landing_profile .content .header ul .col3 .nav .txt {
+          padding-top: 70px; }
+      .landing_profile .content .header ul .col3 .nav.active {
+        background: #b2975b;
+        color: #fff; }
+    .landing_profile .content .header ul .brand {
+      border-right: 1px solid #b2975b;
+      padding-right: 12px; }

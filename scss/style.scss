@@ -6,6 +6,11 @@
 .row{
   width:100%;
 }
+ul,li{
+  list-style:none;
+  margin:0;
+  padding:0;
+}
 .page-section{
   height:823px;
   .content{
@@ -20,3 +25,4 @@
 
 @import "_top_nav";
 @import "_landing";
+@import "_brand_profile";

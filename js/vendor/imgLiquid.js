@@ -160,12 +160,13 @@ imgLiquid.injectCss = '.imgLiquid img {visibility:hidden}';
 						'background-position':	(settings.horizontalAlign + ' ' + settings.verticalAlign).toLowerCase(),
 						'background-repeat':	'no-repeat'
 					});
-
+					/*
 					$('a:first', $imgBoxCont).css({
 						'display':	'block',
 						'width':	'100%',
 						'height':	'100%'
 					});
+					*/
 
 					$('img:first', $imgBoxCont).css({'display': 'none'});
 
