@@ -26,7 +26,8 @@ ul, li {
   background: #b2975b;
   width: 100%;
   top: 0px;
-  display: none; }
+  display: none;
+  z-index: 99999; }
   .top-nav .brand {
     margin-left: 50px;
     float: left; }
@@ -193,3 +194,53 @@ ul, li {
       line-height: 1.7em; }
   .landing_profile .content .container .quanshi, .landing_profile .content .container .dinwei {
     display: none; }
+
+#jiameng {
+  position: relative;
+  overflow: hidden; }
+  #jiameng .bg1 {
+    position: absolute; }
+  #jiameng .bg2 {
+    position: absolute;
+    bottom: -230px;
+    right: -150px; }
+  #jiameng .content {
+    width: 1000px;
+    margin: 0 auto;
+    height: 100%;
+    padding-top: 100px; }
+    #jiameng .content .left {
+      width: 320px;
+      float: left;
+      height: 100%;
+      padding-left: 70px; }
+      #jiameng .content .left .jiameng-phone {
+        margin-top: 15px; }
+    #jiameng .content .right {
+      width: 610px;
+      float: left;
+      height: 100%;
+      position: relative; }
+      #jiameng .content .right .section-selector {
+        width: 600px;
+        border: 1px solid #b2975b;
+        background: url(../img/transparent.png);
+        position: absolute; }
+        #jiameng .content .right .section-selector .bar {
+          width: 10px;
+          height: 100%;
+          background: url(../img/selector-cycle.png) no-repeat 40% 50% #b2975b;
+          float: left; }
+      #jiameng .content .right .section {
+        width: 450px;
+        margin-left: 80px; }
+        #jiameng .content .right .section h3 {
+          font-size: 16px;
+          color: #b2975b;
+          margin: 13px 0; }
+        #jiameng .content .right .section ul li {
+          font-size: 12px;
+          color: #999;
+          line-height: 1.8em; }
+          #jiameng .content .right .section ul li .color {
+            color: #b2975b; }

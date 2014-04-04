@@ -1,0 +1,65 @@
+#jiameng{
+  position:relative;
+  overflow:hidden;
+  .bg1{
+    position:absolute;
+  }
+  .bg2{
+    position:absolute;
+    bottom:-230px;
+    right:-150px;
+  }
+  .content{
+    width:1000px;
+    margin:0 auto;
+    height:100%;
+    padding-top:100px;
+    .left{
+      width:320px;
+      float:left;
+      height:100%;
+      padding-left:70px;
+      .jiameng-phone{
+        margin-top:15px;
+      }
+    }// END .left
+    .right{
+      width:610px;
+      float:left;
+      height:100%;
+      position:relative;
+      .section-selector{
+        width:600px;
+        border:1px solid #b2975b;
+        background:url(../img/transparent.png);
+        position:absolute;
+        .bar{
+          width:10px;
+          height:100%;
+          background:url(../img/selector-cycle.png) no-repeat 40% 50% #b2975b;
+          float:left;
+        }
+      }
+      .section{
+        width:450px;
+        margin-left:80px;
+        h3{
+          font-size:16px;
+          color:#b2975b;
+          margin:13px 0;
+        }
+        ul{
+          li{
+            font-size:12px;
+            color:#999;
+            line-height:1.8em;
+            .color{
+              color:#b2975b;
+            }
+          }// END li
+        }// END ul
+      }// END .section
+    }// END .right
+  }// END .content
+
+}// END #jiameng
