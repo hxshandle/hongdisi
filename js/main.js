@@ -12,8 +12,10 @@ function doResize() {
 }
 
 $(function() {
+	$('.jScrollPane').jScrollPane();
 	$(".img-liquid-fill").imgLiquid();
 	$(".img-liquid-fill-top").imgLiquid({verticalAlign:'top'});
+	$('.top-menu a').smoothScroll();
 	doResize();
 	$(window).resize(doResize);
 });

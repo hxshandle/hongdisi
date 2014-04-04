@@ -55,5 +55,37 @@
         }// END .brand
       }// END ul
     }// END .header
+    .container{
+      height:290px;
+      padding-top:55px;
+      .jspDrag{
+        background: #b2975b;
+      }
+      .jspTrack{
+        background:none;
+      }
+      .jspVerticalBar{
+        background:url('../img/scroller-bg.png') repeat-y;
+      }
+      img{
+        width:421px;
+        height: 290px;
+        float:left;
+      }
+      .txt{
+        width:560px;
+        height: 290px;
+        float:left;
+        padding-left:10px;
+        p{
+          margin:0 0 30px 0;
+          font-size:12px;
+          line-height: 1.7em;
+        }
+      }
+      .quanshi,.dinwei{
+        display:none;
+      }// END .profile
+    }// NED .container
   }// NED .content
 }// NED .landing_profile
