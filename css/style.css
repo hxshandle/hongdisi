@@ -244,3 +244,8 @@ ul, li {
           line-height: 1.8em; }
           #jiameng .content .right .section ul li .color {
             color: #b2975b; }
+
+#brand-news .content {
+  width: 1000px;
+  height: 100%;
+  margin: 0 auto; }
