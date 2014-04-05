@@ -3,5 +3,85 @@
     width:1000px;
     height:100%;
     margin:0 auto;
+    .header{
+      height:137px;
+      .brand{
+        float:left;
+      }
+      .scroll-nav{
+        float:left;
+        width:759px;
+        height:100%;
+        overflow:hidden;
+        position:relative;
+        .scroll-inner{
+          position:absolute;
+          height:100%;
+          width:10000px;
+          .item{
+            text-align:none;
+            display:inline-block;
+            border-left:1px solid #b2975b;
+            border-top:1px solid #b2975b;
+            border-bottom:1px solid #b2975b;
+            width:252px;
+            height:135px;
+            color:#999;
+            .icon{
+              float:left;
+              margin-left:50px;
+              margin-top:30px;
+            }// END .icon
+            ul{
+              float:left;
+              margin-left:10px;
+              margin-top:26px;
+              .date{
+                font-family: didot;
+                font-size:26px;
+              }// END .date
+              .split{
+                height:3px;
+                line-height:3px;
+                background:url(../img/news-split.png) no-repeat;
+              }
+              .zh{
+                font-size:16px;
+              }
+              .en{
+                font-family: didot;
+                font-size:10px;
+              }
+            }// END ul
+            &:hover{
+              color:#b2975b;
+            }// END .item:hover
+          }// END .item
+        }// END .scroll-inner
+      }// END .scroll-nav
+      .scroll-toggle{
+        float:left;
+        width:17px;
+        .pre{
+          display:block;
+          height:68px;
+          background:url("../img/news-scroll-nav_pre.png") no-repeat 50% 50% #d1c19d;
+          cursor:pointer;
+          &.active{
+            background:url("../img/news-scroll-nav_pre.png") no-repeat 50% 50% #b2975b;
+          }
+        }// END a
+        
+        .next{
+          display:block;
+          height:69px;
+          background:url("../img/news-scroll-nav_next.png") no-repeat 50% 50% #d1c19d;
+          cursor:pointer;
+          &.active{
+            background:url("../img/news-scroll-nav_next.png") no-repeat 50% 50% #b2975b;
+          }
+        }// END .next
+      }// End .scroll-toggle
+    }// END .header
   }// END .content
 }// END #brand-news
