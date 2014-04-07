@@ -249,69 +249,110 @@ ul, li {
           #jiameng .content .right .section ul li .color {
             color: #b2975b; }
 
-#brand-news .content {
-  width: 1000px;
-  height: 100%;
-  margin: 0 auto; }
-  #brand-news .content .header {
-    height: 137px; }
-    #brand-news .content .header .brand {
-      float: left; }
-    #brand-news .content .header .scroll-nav {
-      float: left;
-      width: 759px;
-      height: 100%;
-      overflow: hidden;
-      position: relative; }
-      #brand-news .content .header .scroll-nav .scroll-inner {
-        position: absolute;
+#brand-news {
+  overflow: hidden; }
+  #brand-news .content {
+    width: 1000px;
+    height: 100%;
+    margin: 0 auto; }
+    #brand-news .content .header {
+      height: 137px;
+      margin-top: 120px; }
+      #brand-news .content .header .brand {
+        float: left; }
+      #brand-news .content .header .scroll-nav {
+        float: left;
+        width: 759px;
         height: 100%;
-        width: 10000px; }
-        #brand-news .content .header .scroll-nav .scroll-inner .item {
-          text-align: none;
-          display: inline-block;
-          border-left: 1px solid #b2975b;
-          border-top: 1px solid #b2975b;
-          border-bottom: 1px solid #b2975b;
-          width: 252px;
-          height: 135px;
-          color: #999; }
-          #brand-news .content .header .scroll-nav .scroll-inner .item .icon {
+        overflow: hidden;
+        position: relative; }
+        #brand-news .content .header .scroll-nav .scroll-inner {
+          position: absolute;
+          height: 100%;
+          width: 10000px; }
+          #brand-news .content .header .scroll-nav .scroll-inner .item {
+            text-align: none;
+            display: inline-block;
+            border-left: 1px solid #b2975b;
+            border-top: 1px solid #b2975b;
+            border-bottom: 1px solid #b2975b;
+            width: 252px;
+            height: 135px;
+            color: #999; }
+            #brand-news .content .header .scroll-nav .scroll-inner .item.active {
+              color: #b2975b; }
+            #brand-news .content .header .scroll-nav .scroll-inner .item .icon {
+              float: left;
+              margin-left: 50px;
+              margin-top: 30px; }
+            #brand-news .content .header .scroll-nav .scroll-inner .item ul {
+              float: left;
+              margin-left: 10px;
+              margin-top: 26px; }
+              #brand-news .content .header .scroll-nav .scroll-inner .item ul .date {
+                font-family: didot;
+                font-size: 26px; }
+              #brand-news .content .header .scroll-nav .scroll-inner .item ul .split {
+                height: 3px;
+                line-height: 3px;
+                background: url(../img/news-split.png) no-repeat; }
+              #brand-news .content .header .scroll-nav .scroll-inner .item ul .zh {
+                font-size: 16px; }
+              #brand-news .content .header .scroll-nav .scroll-inner .item ul .en {
+                font-family: didot;
+                font-size: 10px; }
+            #brand-news .content .header .scroll-nav .scroll-inner .item:hover {
+              color: #b2975b; }
+      #brand-news .content .header .scroll-toggle {
+        float: left;
+        width: 17px; }
+        #brand-news .content .header .scroll-toggle .pre {
+          display: block;
+          height: 68px;
+          background: url("../img/news-scroll-nav_pre.png") no-repeat 50% 50% #d1c19d;
+          cursor: pointer; }
+          #brand-news .content .header .scroll-toggle .pre.active {
+            background: url("../img/news-scroll-nav_pre.png") no-repeat 50% 50% #b2975b; }
+        #brand-news .content .header .scroll-toggle .next {
+          display: block;
+          height: 69px;
+          background: url("../img/news-scroll-nav_next.png") no-repeat 50% 50% #d1c19d;
+          cursor: pointer; }
+          #brand-news .content .header .scroll-toggle .next.active {
+            background: url("../img/news-scroll-nav_next.png") no-repeat 50% 50% #b2975b; }
+    #brand-news .content .news-container {
+      margin-top: 60px; }
+      #brand-news .content .news-container .news {
+        display: none; }
+        #brand-news .content .news-container .news.active {
+          display: block; }
+        #brand-news .content .news-container .news .news-image {
+          width: 482px;
+          height: 400px;
+          float: left; }
+        #brand-news .content .news-container .news .jspDrag {
+          background: #b2975b; }
+        #brand-news .content .news-container .news .jspTrack {
+          background: none; }
+        #brand-news .content .news-container .news .jspVerticalBar {
+          background: url("../img/scroller-bg.png") repeat-y; }
+        #brand-news .content .news-container .news .article {
+          float: left;
+          width: 450px;
+          height: 240px;
+          color: #b2975b;
+          margin-left: 55px;
+          margin-top: 100px; }
+          #brand-news .content .news-container .news .article .title .date {
+            font-size: 35px;
             float: left;
-            margin-left: 50px;
-            margin-top: 30px; }
-          #brand-news .content .header .scroll-nav .scroll-inner .item ul {
-            float: left;
-            margin-left: 10px;
-            margin-top: 26px; }
-            #brand-news .content .header .scroll-nav .scroll-inner .item ul .date {
-              font-family: didot;
-              font-size: 26px; }
-            #brand-news .content .header .scroll-nav .scroll-inner .item ul .split {
-              height: 3px;
-              line-height: 3px;
-              background: url(../img/news-split.png) no-repeat; }
-            #brand-news .content .header .scroll-nav .scroll-inner .item ul .zh {
-              font-size: 16px; }
-            #brand-news .content .header .scroll-nav .scroll-inner .item ul .en {
-              font-family: didot;
-              font-size: 10px; }
-          #brand-news .content .header .scroll-nav .scroll-inner .item:hover {
-            color: #b2975b; }
-    #brand-news .content .header .scroll-toggle {
-      float: left;
-      width: 17px; }
-      #brand-news .content .header .scroll-toggle .pre {
-        display: block;
-        height: 68px;
-        background: url("../img/news-scroll-nav_pre.png") no-repeat 50% 50% #d1c19d;
-        cursor: pointer; }
-        #brand-news .content .header .scroll-toggle .pre.active {
-          background: url("../img/news-scroll-nav_pre.png") no-repeat 50% 50% #b2975b; }
-      #brand-news .content .header .scroll-toggle .next {
-        display: block;
-        height: 69px;
-        background: url("../img/news-scroll-nav_next.png") no-repeat 50% 50% #d1c19d;
-        cursor: pointer; }
-        #brand-news .content .header .scroll-toggle .next.active {
-          background: url("../img/news-scroll-nav_next.png") no-repeat 50% 50% #b2975b; }
+            font-family: didot;
+            margin-right: 10px; }
+          #brand-news .content .news-container .news .article .title .sub .zh {
+            font-size: 16px;
+            padding-top: 6px; }
+          #brand-news .content .news-container .news .article .title .sub .en {
+            font-size: 10px;
+            margin-top: -4px; }
+          #brand-news .content .news-container .news .article .article-content p {
+            font-size: 12px; }
