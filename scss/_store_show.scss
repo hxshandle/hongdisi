@@ -1,0 +1,36 @@
+#store-show{
+  .header{
+    height:156px;
+    width:100%;
+    .container{
+      width:1000px;
+      height:100%;
+      margin:0 auto;
+      position:relative;
+      select{
+        font-size:12px;
+      }
+      .sbToggle {
+        background:url(../img/select-icons.png) 0 -116px no-repeat #b2975b;
+      }
+      .sbToggleOpen {
+        background: url(../img/select-icons.png) 0 -16px no-repeat #b2975b;
+      }
+      .sbHolder{
+        border:1px solid #ccc;
+        display:inline-block;
+        position:absolute;
+        top:56px;
+        left:444px;
+      }
+      #address{
+        color:#ccc;
+        font-size:12px;
+        position:absolute;
+        top:66px;
+        right:0px;
+
+      }
+    }// END .container
+  }// END .header
+}// NED #store-show

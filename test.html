@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/jquery.jscrollpane.css">
+    <link rel="stylesheet" href="css/jquery.selectbox.css">
     <link rel="stylesheet" href="css/style.css">
     <script src="js/vendor/modernizr-2.6.2.min.js"></script>
     <title></title>
@@ -27,7 +28,7 @@
         <li><a href="#">FASHION SHOW</a></li>
         <li><a href="#brand-news">BRAND NEWS</a></li>
         <li><a href="#jiameng">AFFILIATE CENTER</a></li>
-        <li><a href="#">SHOWROOM</a></li>
+        <li><a href="#store-show">SHOWROOM</a></li>
         <li><a href="#">CONTACT US</a></li>
       </ul>
       <div class="search">
@@ -271,6 +272,19 @@
         </div>
       </div>
     </div>
+    <div id="store-show" class="main page-section">
+      <div class="header">
+        <div class="container"><img src="img/brand-store.png">
+          <select id="store-selector">
+            <option value="address1" data-address="环城北路111号">杭州市下城区1</option>
+            <option value="address2" data-address="环城北路112号">杭州市下城区2</option>
+            <option value="address3" data-address="环城北路113号">杭州市下城区3</option>
+            <option value="address4" data-address="环城北路114号">杭州市下城区4</option>
+            <option value="address5" data-address="环城北路115号">杭州市下城区5</option>
+          </select><span id="address">>环城北路111号</span>
+        </div>
+      </div>
+    </div>
     <script src="js/vendor/jquery-1.10.2.min.js"></script>
     <script src="js/vendor/jquery-ui.js"></script>
     <script src="js/vendor/imgLiquid.js"></script>
@@ -278,12 +292,14 @@
     <script src="js/vendor/jquery.mousewheel.js"></script>
     <script src="js/vendor/jquery.jscrollpane.min.js"></script>
     <script src="js/vendor/jquery.smooth-scroll.js"></script>
+    <script src="js/vendor/jquery.selectbox-0.2.js"></script>
     <script src="js/vendor/TweenMax-1.11.4.min.js"></script>
     <script src="js/plugins.js"></script>
     <script src="js/top_nav.js"></script>
     <script src="js/brand_profile.js"></script>
     <script src="js/jiameng.js"></script>
     <script src="js/brand_news.js"></script>
+    <script src="js/store_show.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>

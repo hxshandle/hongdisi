@@ -356,3 +356,30 @@ ul, li {
             margin-top: -4px; }
           #brand-news .content .news-container .news .article .article-content p {
             font-size: 12px; }
+
+#store-show .header {
+  height: 156px;
+  width: 100%; }
+  #store-show .header .container {
+    width: 1000px;
+    height: 100%;
+    margin: 0 auto;
+    position: relative; }
+    #store-show .header .container select {
+      font-size: 12px; }
+    #store-show .header .container .sbToggle {
+      background: url(../img/select-icons.png) 0 -116px no-repeat #b2975b; }
+    #store-show .header .container .sbToggleOpen {
+      background: url(../img/select-icons.png) 0 -16px no-repeat #b2975b; }
+    #store-show .header .container .sbHolder {
+      border: 1px solid #ccc;
+      display: inline-block;
+      position: absolute;
+      top: 56px;
+      left: 444px; }
+    #store-show .header .container #address {
+      color: #ccc;
+      font-size: 12px;
+      position: absolute;
+      top: 66px;
+      right: 0px; }
