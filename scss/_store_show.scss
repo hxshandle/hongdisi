@@ -33,4 +33,43 @@
       }
     }// END .container
   }// END .header
+  .img-gallery{
+    width:100%;
+    height:665px;
+    overflow:hidden;
+    position:relative;
+    .mask-left,.mask-right{
+      position:absolute;
+      height:665px;
+      background:rgba(178,151,91,0.8);
+      z-index:99;
+    }
+    .pre-img{
+      width:50px;
+      position:absolute;
+      height:100%;
+      z-index:100;
+      cursor:pointer;
+      &:hover{
+        background:url('../img/nav-l.png') no-repeat 50% 50%;
+      }
+    }// END .pre-img
+    .next-img{
+      width:60px;
+      right:0px;
+      position:absolute;
+      height:100%;
+      z-index:100;
+      cursor:pointer;
+      &:hover{
+        background:url('../img/nav-r.png') no-repeat 50% 50%;
+      }
+    }// END .pre-img
+    .store-show{
+      position:absolute;
+      width:10000px;
+      display:none;
+      opacity:0;
+    }// END .store-show
+  }// END .img-gallery
 }// NED #store-show

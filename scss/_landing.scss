@@ -1,4 +1,11 @@
 .landing-section{
+  position:relative;
+  text-align:center;
+  .scroll-down{
+    position:absolute;
+    bottom: 1000px;
+    cursor:pointer;
+  }
   .content{
     width:1000px;
     height:100%;

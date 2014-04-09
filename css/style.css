@@ -95,44 +95,51 @@ ul, li {
       line-height: 23px;
       background: url(../img/top_nav/search_icon.png); }
 
-.landing-section .content {
-  width: 1000px;
-  height: 100%;
-  margin: 0 auto;
-  text-align: center;
-  padding-top: 180px; }
-  .landing-section .content .logo {
-    display: block;
-    margin: 0 auto; }
-  .landing-section .content .h1 {
-    color: #fff;
-    font-size: 26px;
-    margin-top: 18px;
-    font-family: didot-bold; }
-  .landing-section .content .h2 {
-    color: #fff;
-    font-size: 10px;
-    font-family: didot-bold; }
-  .landing-section .content .social-icons {
-    margin-top: 50px; }
-    .landing-section .content .social-icons .qq, .landing-section .content .social-icons .weixin, .landing-section .content .social-icons .xinlang {
-      width: 25px;
-      height: 25px;
-      line-height: 25px;
-      display: inline-block;
-      margin: 0 3px; }
-    .landing-section .content .social-icons .qq {
-      background: url(../img/top_nav/qq1.png); }
-      .landing-section .content .social-icons .qq:hover {
-        background: url(../img/top_nav/qq.png); }
-    .landing-section .content .social-icons .xinlang {
-      background: url(../img/top_nav/xinlang1.png); }
-      .landing-section .content .social-icons .xinlang:hover {
-        background: url(../img/top_nav/xinlang.png); }
-    .landing-section .content .social-icons .weixin {
-      background: url(../img/top_nav/weixin1.png); }
-      .landing-section .content .social-icons .weixin:hover {
-        background: url(../img/top_nav/weixin.png); }
+.landing-section {
+  position: relative;
+  text-align: center; }
+  .landing-section .scroll-down {
+    position: absolute;
+    bottom: 1000px;
+    cursor: pointer; }
+  .landing-section .content {
+    width: 1000px;
+    height: 100%;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 180px; }
+    .landing-section .content .logo {
+      display: block;
+      margin: 0 auto; }
+    .landing-section .content .h1 {
+      color: #fff;
+      font-size: 26px;
+      margin-top: 18px;
+      font-family: didot-bold; }
+    .landing-section .content .h2 {
+      color: #fff;
+      font-size: 10px;
+      font-family: didot-bold; }
+    .landing-section .content .social-icons {
+      margin-top: 50px; }
+      .landing-section .content .social-icons .qq, .landing-section .content .social-icons .weixin, .landing-section .content .social-icons .xinlang {
+        width: 25px;
+        height: 25px;
+        line-height: 25px;
+        display: inline-block;
+        margin: 0 3px; }
+      .landing-section .content .social-icons .qq {
+        background: url(../img/top_nav/qq1.png); }
+        .landing-section .content .social-icons .qq:hover {
+          background: url(../img/top_nav/qq.png); }
+      .landing-section .content .social-icons .xinlang {
+        background: url(../img/top_nav/xinlang1.png); }
+        .landing-section .content .social-icons .xinlang:hover {
+          background: url(../img/top_nav/xinlang.png); }
+      .landing-section .content .social-icons .weixin {
+        background: url(../img/top_nav/weixin1.png); }
+        .landing-section .content .social-icons .weixin:hover {
+          background: url(../img/top_nav/weixin.png); }
 
 .landing_profile .content .header {
   padding-top: 160px; }
@@ -383,3 +390,35 @@ ul, li {
       position: absolute;
       top: 66px;
       right: 0px; }
+#store-show .img-gallery {
+  width: 100%;
+  height: 665px;
+  overflow: hidden;
+  position: relative; }
+  #store-show .img-gallery .mask-left, #store-show .img-gallery .mask-right {
+    position: absolute;
+    height: 665px;
+    background: rgba(178, 151, 91, 0.8);
+    z-index: 99; }
+  #store-show .img-gallery .pre-img {
+    width: 50px;
+    position: absolute;
+    height: 100%;
+    z-index: 100;
+    cursor: pointer; }
+    #store-show .img-gallery .pre-img:hover {
+      background: url("../img/nav-l.png") no-repeat 50% 50%; }
+  #store-show .img-gallery .next-img {
+    width: 60px;
+    right: 0px;
+    position: absolute;
+    height: 100%;
+    z-index: 100;
+    cursor: pointer; }
+    #store-show .img-gallery .next-img:hover {
+      background: url("../img/nav-r.png") no-repeat 50% 50%; }
+  #store-show .img-gallery .store-show {
+    position: absolute;
+    width: 10000px;
+    display: none;
+    opacity: 0; }
