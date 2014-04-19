@@ -1,4 +1,5 @@
 #fashion-show{
+  overflow:hidden;
   .container{
     width:1000px;
     position:relative;
@@ -26,6 +27,7 @@
   .container-fill{
     width:100%;
     margin-top:50px;
+    position:relative;
     #lv1{
       width:100%;
       text-align:center;
@@ -77,9 +79,60 @@
             font-family:didot-htf-m96-medium-ital;
               font-size:32px;
             }
-          }
+          }// END .color-bg
         }// END .text-block
       }// END li
     }// END #lv1
+    .xilie{
+      font-size:0px;
+      position:absolute;
+      top:1000px;
+      left:0;
+      z-index:200;
+      background:#fff;
+      text-align:center;
+      .close{
+        position:absolute;
+        z-index:203;
+        top:0;
+        right:15px;
+        color:#fff;
+        font-size:36px;
+        text-decoration:none;
+      }// END .close
+      ul{
+      font-size:0px;
+      text-align:center;
+
+        li{
+          display:inline-block;
+          position:relative;
+          img{
+            margin-bottom:1px;
+          }
+          .mask{
+            position:absolute;
+            left:0;
+            top:0;
+            display:block;
+            background:#b2975b;
+            opacity:0;
+            -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+            z-index:202;
+            cursor:pointer;
+          }// NED .mask
+          .camera{
+            position:absolute;
+            top:50%;
+            left:50%;
+            margin-top:-50px;
+            margin-left:-35px;
+            z-index:201;
+            opacity:0;
+            -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+          }
+        }// END li
+      }// END ul
+    }// END .xili
   }// END .container-fill
 }// END #fashion-show

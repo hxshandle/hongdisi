@@ -427,70 +427,116 @@ ul, li {
     display: none;
     opacity: 0; }
 
-#fashion-show .container {
-  width: 1000px;
-  position: relative;
-  margin: 0 auto; }
-  #fashion-show .container select {
-    font-size: 12px; }
-  #fashion-show .container .sbToggle {
-    background: url(../img/select-icons.png) 0 -116px no-repeat #b2975b; }
-  #fashion-show .container .sbToggleOpen {
-    background: url(../img/select-icons.png) 0 -16px no-repeat #b2975b; }
-  #fashion-show .container .sbHolder {
-    border: 1px solid #ccc;
-    display: inline-block;
-    position: absolute;
-    top: 7px;
-    left: 444px; }
-  #fashion-show .container .header {
-    margin-top: 100px; }
-#fashion-show .container-fill {
-  width: 100%;
-  margin-top: 50px; }
-  #fashion-show .container-fill #lv1 {
-    width: 100%;
-    text-align: center;
-    font-size: 0px; }
-    #fashion-show .container-fill #lv1 li {
+#fashion-show {
+  overflow: hidden; }
+  #fashion-show .container {
+    width: 1000px;
+    position: relative;
+    margin: 0 auto; }
+    #fashion-show .container select {
+      font-size: 12px; }
+    #fashion-show .container .sbToggle {
+      background: url(../img/select-icons.png) 0 -116px no-repeat #b2975b; }
+    #fashion-show .container .sbToggleOpen {
+      background: url(../img/select-icons.png) 0 -16px no-repeat #b2975b; }
+    #fashion-show .container .sbHolder {
+      border: 1px solid #ccc;
       display: inline-block;
-      position: relative;
-      width: 326px;
-      height: 519px; }
-      #fashion-show .container-fill #lv1 li.mr {
-        margin-right: 10px; }
-      #fashion-show .container-fill #lv1 li .mask {
-        position: absolute;
-        left: 0;
-        top: 0;
-        display: block;
+      position: absolute;
+      top: 7px;
+      left: 444px; }
+    #fashion-show .container .header {
+      margin-top: 100px; }
+  #fashion-show .container-fill {
+    width: 100%;
+    margin-top: 50px;
+    position: relative; }
+    #fashion-show .container-fill #lv1 {
+      width: 100%;
+      text-align: center;
+      font-size: 0px; }
+      #fashion-show .container-fill #lv1 li {
+        display: inline-block;
+        position: relative;
         width: 326px;
-        height: 519px;
-        background: #b2975b;
-        opacity: 0;
-        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
-        z-index: 1;
-        cursor: pointer; }
-      #fashion-show .container-fill #lv1 li .txt-block {
-        width: 200px;
-        height: 110px;
-        border: 1px solid #fff;
-        background: url(../img/transparent.png);
+        height: 519px; }
+        #fashion-show .container-fill #lv1 li.mr {
+          margin-right: 10px; }
+        #fashion-show .container-fill #lv1 li .mask {
+          position: absolute;
+          left: 0;
+          top: 0;
+          display: block;
+          width: 326px;
+          height: 519px;
+          background: #b2975b;
+          opacity: 0;
+          -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+          z-index: 1;
+          cursor: pointer; }
+        #fashion-show .container-fill #lv1 li .txt-block {
+          width: 200px;
+          height: 110px;
+          border: 1px solid #fff;
+          background: url(../img/transparent.png);
+          position: absolute;
+          left: 50px;
+          top: 205px;
+          opacity: 0;
+          -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"; }
+          #fashion-show .container-fill #lv1 li .txt-block .color-bg {
+            margin: 8px 12px;
+            background: url(../img/txt-block-bg.png);
+            height: 75px;
+            color: #fff;
+            padding-top: 20px; }
+            #fashion-show .container-fill #lv1 li .txt-block .color-bg .yahei {
+              font-family: "Microsoft YaHei";
+              font-size: 16px;
+              padding-right: 10px; }
+            #fashion-show .container-fill #lv1 li .txt-block .color-bg .didot-ital {
+              font-family: didot-htf-m96-medium-ital;
+              font-size: 32px; }
+    #fashion-show .container-fill .xilie {
+      font-size: 0px;
+      position: absolute;
+      top: 1000px;
+      left: 0;
+      z-index: 200;
+      background: #fff;
+      text-align: center; }
+      #fashion-show .container-fill .xilie .close {
         position: absolute;
-        left: 50px;
-        top: 205px;
-        opacity: 0;
-        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"; }
-        #fashion-show .container-fill #lv1 li .txt-block .color-bg {
-          margin: 8px 12px;
-          background: url(../img/txt-block-bg.png);
-          height: 75px;
-          color: #fff;
-          padding-top: 20px; }
-          #fashion-show .container-fill #lv1 li .txt-block .color-bg .yahei {
-            font-family: "Microsoft YaHei";
-            font-size: 16px;
-            padding-right: 10px; }
-          #fashion-show .container-fill #lv1 li .txt-block .color-bg .didot-ital {
-            font-family: didot-htf-m96-medium-ital;
-            font-size: 32px; }
+        z-index: 203;
+        top: 0;
+        right: 15px;
+        color: #fff;
+        font-size: 36px;
+        text-decoration: none; }
+      #fashion-show .container-fill .xilie ul {
+        font-size: 0px;
+        text-align: center; }
+        #fashion-show .container-fill .xilie ul li {
+          display: inline-block;
+          position: relative; }
+          #fashion-show .container-fill .xilie ul li img {
+            margin-bottom: 1px; }
+          #fashion-show .container-fill .xilie ul li .mask {
+            position: absolute;
+            left: 0;
+            top: 0;
+            display: block;
+            background: #b2975b;
+            opacity: 0;
+            -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+            z-index: 202;
+            cursor: pointer; }
+          #fashion-show .container-fill .xilie ul li .camera {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin-top: -50px;
+            margin-left: -35px;
+            z-index: 201;
+            opacity: 0;
+            -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"; }
