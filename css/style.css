@@ -439,6 +439,8 @@ ul, li {
       background: url(../img/select-icons.png) 0 -116px no-repeat #b2975b; }
     #fashion-show .container .sbToggleOpen {
       background: url(../img/select-icons.png) 0 -16px no-repeat #b2975b; }
+    #fashion-show .container .sbOptions {
+      z-index: 400; }
     #fashion-show .container .sbHolder {
       border: 1px solid #ccc;
       display: inline-block;
@@ -446,23 +448,26 @@ ul, li {
       top: 7px;
       left: 444px; }
     #fashion-show .container .header {
-      margin-top: 100px; }
+      margin-top: 40px; }
   #fashion-show .container-fill {
     width: 100%;
     margin-top: 50px;
     position: relative; }
-    #fashion-show .container-fill #lv1 {
+    #fashion-show .container-fill #dapian {
+      width: 100%;
+      display: none; }
+    #fashion-show .container-fill #collocation {
       width: 100%;
       text-align: center;
       font-size: 0px; }
-      #fashion-show .container-fill #lv1 li {
+      #fashion-show .container-fill #collocation li {
         display: inline-block;
         position: relative;
         width: 326px;
         height: 519px; }
-        #fashion-show .container-fill #lv1 li.mr {
+        #fashion-show .container-fill #collocation li.mr {
           margin-right: 10px; }
-        #fashion-show .container-fill #lv1 li .mask {
+        #fashion-show .container-fill #collocation li .mask {
           position: absolute;
           left: 0;
           top: 0;
@@ -474,7 +479,7 @@ ul, li {
           -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
           z-index: 1;
           cursor: pointer; }
-        #fashion-show .container-fill #lv1 li .txt-block {
+        #fashion-show .container-fill #collocation li .txt-block {
           width: 200px;
           height: 110px;
           border: 1px solid #fff;
@@ -484,19 +489,50 @@ ul, li {
           top: 205px;
           opacity: 0;
           -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"; }
-          #fashion-show .container-fill #lv1 li .txt-block .color-bg {
+          #fashion-show .container-fill #collocation li .txt-block .color-bg {
             margin: 8px 12px;
             background: url(../img/txt-block-bg.png);
             height: 75px;
             color: #fff;
             padding-top: 20px; }
-            #fashion-show .container-fill #lv1 li .txt-block .color-bg .yahei {
+            #fashion-show .container-fill #collocation li .txt-block .color-bg .yahei {
               font-family: "Microsoft YaHei";
               font-size: 16px;
               padding-right: 10px; }
-            #fashion-show .container-fill #lv1 li .txt-block .color-bg .didot-ital {
+            #fashion-show .container-fill #collocation li .txt-block .color-bg .didot-ital {
               font-family: didot-htf-m96-medium-ital;
               font-size: 32px; }
+    #fashion-show .container-fill .dp-gallery {
+      width: 100%;
+      height: 665px;
+      overflow: hidden;
+      position: relative; }
+      #fashion-show .container-fill .dp-gallery .mask-left, #fashion-show .container-fill .dp-gallery .mask-right {
+        position: absolute;
+        height: 665px;
+        background: rgba(178, 151, 91, 0.8);
+        z-index: 99; }
+      #fashion-show .container-fill .dp-gallery .pre-img {
+        width: 50px;
+        position: absolute;
+        height: 100%;
+        z-index: 100;
+        cursor: pointer; }
+        #fashion-show .container-fill .dp-gallery .pre-img:hover {
+          background: url("../img/nav-l.png") no-repeat 50% 50%; }
+      #fashion-show .container-fill .dp-gallery .next-img {
+        width: 60px;
+        right: 0px;
+        position: absolute;
+        height: 100%;
+        z-index: 100;
+        cursor: pointer; }
+        #fashion-show .container-fill .dp-gallery .next-img:hover {
+          background: url("../img/nav-r.png") no-repeat 50% 50%; }
+      #fashion-show .container-fill .dp-gallery .dp-show {
+        position: absolute;
+        width: 10000px;
+        display: none; }
     #fashion-show .container-fill .xilie {
       font-size: 0px;
       position: absolute;
@@ -508,7 +544,7 @@ ul, li {
       #fashion-show .container-fill .xilie .close {
         position: absolute;
         z-index: 203;
-        top: 0;
+        top: 15px;
         right: 15px;
         color: #fff;
         font-size: 36px;
@@ -540,3 +576,33 @@ ul, li {
             z-index: 201;
             opacity: 0;
             -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"; }
+    #fashion-show .container-fill .big-show-outer {
+      position: absolute;
+      top: 1000px;
+      left: 0px;
+      width: 100%;
+      z-index: 300;
+      background: #d9bea1; }
+      #fashion-show .container-fill .big-show-outer .close-big-show {
+        position: absolute;
+        right: 15px;
+        top: 15px;
+        z-index: 303; }
+      #fashion-show .container-fill .big-show-outer .big-show-wrapper {
+        width: 1000px;
+        height: 701px;
+        margin: 0 auto; }
+        #fashion-show .container-fill .big-show-outer .big-show-wrapper img {
+          display: none; }
+
+#contact-us .container {
+  width: 1000px;
+  height: 100%;
+  margin: 0 auto;
+  position: relative; }
+  #contact-us .container img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -158px;
+    margin-top: -253px; }

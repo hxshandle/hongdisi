@@ -13,6 +13,9 @@
     .sbToggleOpen {
       background: url(../img/select-icons.png) 0 -16px no-repeat #b2975b;
     }
+    .sbOptions{
+      z-index:400;
+    }
     .sbHolder{
       border:1px solid #ccc;
       display:inline-block;
@@ -21,14 +24,18 @@
       left:444px;
     }
     .header{
-      margin-top:100px;
+      margin-top:40px;
     }// END .header
   }// END .container
   .container-fill{
     width:100%;
     margin-top:50px;
     position:relative;
-    #lv1{
+    #dapian{
+      width:100%;
+      display:none;
+    }// END #dapian
+    #collocation{
       width:100%;
       text-align:center;
       font-size:0px;
@@ -82,7 +89,45 @@
           }// END .color-bg
         }// END .text-block
       }// END li
-    }// END #lv1
+    }// END #collocation
+    .dp-gallery{
+      width:100%;
+      height:665px;
+      overflow:hidden;
+      position:relative;
+      .mask-left,.mask-right{
+        position:absolute;
+        height:665px;
+        background:rgba(178,151,91,0.8);
+        z-index:99;
+      }
+      .pre-img{
+        width:50px;
+        position:absolute;
+        height:100%;
+        z-index:100;
+        cursor:pointer;
+        &:hover{
+          background:url('../img/nav-l.png') no-repeat 50% 50%;
+        }
+      }// END .pre-img
+      .next-img{
+        width:60px;
+        right:0px;
+        position:absolute;
+        height:100%;
+        z-index:100;
+        cursor:pointer;
+        &:hover{
+          background:url('../img/nav-r.png') no-repeat 50% 50%;
+        }
+      }// END .pre-img
+      .dp-show{
+        position:absolute;
+        width:10000px;
+        display:none;
+      }// END .store-show
+    }// END .img-gallery
     .xilie{
       font-size:0px;
       position:absolute;
@@ -94,7 +139,7 @@
       .close{
         position:absolute;
         z-index:203;
-        top:0;
+        top:15px;
         right:15px;
         color:#fff;
         font-size:36px;
@@ -103,7 +148,6 @@
       ul{
       font-size:0px;
       text-align:center;
-
         li{
           display:inline-block;
           position:relative;
@@ -134,5 +178,27 @@
         }// END li
       }// END ul
     }// END .xili
+    .big-show-outer{
+      position:absolute;
+      top:1000px;
+      left:0px;
+      width:100%;
+      z-index:300;
+      background:#d9bea1;
+      .close-big-show{
+        position:absolute;
+        right:15px;
+        top:15px;
+        z-index:303;
+      }// END .close-big-show
+      .big-show-wrapper{
+        width:1000px;
+        height:701px;
+        margin:0 auto;
+        img{
+          display:none;
+        }
+      }// END .big-show-wrapper
+    }// END .big-show-outer
   }// END .container-fill
 }// END #fashion-show

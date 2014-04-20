@@ -44,7 +44,7 @@ $(function() {
     }
   });
 
-  $('.pre-img').click(function() {
+  $('.pre-img','#store-show').click(function() {
     if (!canMove) {
       return;
     }
@@ -62,7 +62,7 @@ $(function() {
       }
     });
   });
-  $('.next-img').click(function() {
+  $('.next-img','#store-show').click(function() {
     if (!canMove) {
       return;
     }

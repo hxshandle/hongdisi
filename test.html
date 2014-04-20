@@ -301,13 +301,21 @@
         <div class="header"><img src="img/fs-brand.png">
           <select id="fs-selector">
             <option value="collocation">搭配 Collocation</option>
-            <option value="collocation">产品大片</option>
-            <option value="collocation">搭配 Collocation</option>
+            <option value="dapian">产品大片</option>
           </select>
         </div>
       </div>
       <div class="container-fill">
-        <ul id="lv1">
+        <div id="dapian" class="lv1">
+          <div class="dp-gallery">
+            <div class="mask-left"></div>
+            <div class="mask-right"></div>
+            <div class="pre-img"></div>
+            <div class="next-img"></div>
+            <div id="dp-show" class="dp-show"><img src="img/dp-1.jpg"><img src="img/dp-2.jpg"><img src="img/dp-3.jpg"></div>
+          </div>
+        </div>
+        <ul id="collocation" class="lv1 active">
           <li data-ref="fs-1" class="mr lv-xl"><img src="img/fs-1.jpg"><a class="mask"></a>
             <div class="txt-block">
               <div class="color-bg"><span class="yahei">春季</span><span class="didot-ital">Spring</span></div>
@@ -324,29 +332,35 @@
             </div>
           </li>
         </ul>
-        <div id="fs-1" class="xilie"><a href="javascript:void(0)" class="close">X</a>
+        <div id="fs-1" class="xilie"><a href="javascript:void(0)" class="close"><img src="img/big-white-close.png"></a>
           <ul>
-            <li><img src="img/xl1.png">
+            <li data-ref="bs-1" class="lv-2"><img src="img/xl1.png">
               <div class="mask"></div><img src="img/show-img-caramar.png" class="camera">
             </li>
-            <li><img src="img/xl2.png">
+            <li data-ref="bs-1" class="lv-2"><img src="img/xl2.png">
               <div class="mask"></div><img src="img/show-img-caramar.png" class="camera">
             </li>
-            <li><img src="img/xl3.png">
+            <li data-ref="bs-1" class="lv-2"><img src="img/xl3.png">
               <div class="mask"></div><img src="img/show-img-caramar.png" class="camera">
             </li>
-            <li><img src="img/xl4.png">
+            <li data-ref="bs-1" class="lv-2"><img src="img/xl4.png">
               <div class="mask"></div><img src="img/show-img-caramar.png" class="camera">
             </li>
-            <li><img src="img/xl5.png">
+            <li data-ref="bs-1" class="lv-2"><img src="img/xl5.png">
               <div class="mask"></div><img src="img/show-img-caramar.png" class="camera">
             </li>
-            <li><img src="img/xl6.png">
+            <li data-ref="bs-1" class="lv-2"><img src="img/xl6.png">
               <div class="mask"></div><img src="img/show-img-caramar.png" class="camera">
             </li>
           </ul>
         </div>
+        <div class="big-show-outer"><a href="javascript:void(0)" class="close-big-show"><img src="img/big-white-close.png"></a>
+          <div class="big-show-wrapper"><img id="bs-1" src="img/bs-1.jpg" class="big-show"></div>
+        </div>
       </div>
+    </div>
+    <div id="contact-us" class="row img-liquid-fill page-section"><img src="img/contact-us-bg.jpg">
+      <div class="container"><img src="img/contact-us.png"></div>
     </div>
     <script src="js/vendor/jquery-1.10.2.min.js"></script>
     <script src="js/vendor/jquery-ui.js"></script>

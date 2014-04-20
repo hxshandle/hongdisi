@@ -5,10 +5,19 @@
       img(src="img/fs-brand.png")
       select#fs-selector
         option(value="collocation") 搭配 Collocation
-        option(value="collocation") 产品大片
-        option(value="collocation") 搭配 Collocation
+        option(value="dapian") 产品大片
   .container-fill
-    ul#lv1
+    #dapian.lv1
+      .dp-gallery
+        .mask-left
+        .mask-right
+        .pre-img
+        .next-img
+        .dp-show#dp-show
+          img(src="img/dp-1.jpg")
+          img(src="img/dp-2.jpg")
+          img(src="img/dp-3.jpg")
+    ul#collocation.lv1.active
       li.mr.lv-xl("data-ref"="fs-1")
         img(src="img/fs-1.jpg")
         a.mask
@@ -31,31 +40,38 @@
             span.yahei 秋季
             span.didot-ital autumn
     .xilie#fs-1
-      a.close(href="javascript:void(0)") X
+      a.close(href="javascript:void(0)")
+        img(src="img/big-white-close.png")
       ul
-        li
+        li.lv-2("data-ref"="bs-1")
           img(src="img/xl1.png")
           .mask
           img.camera(src="img/show-img-caramar.png")
-        li
+        li.lv-2("data-ref"="bs-1")
           img(src="img/xl2.png")
           .mask
           img.camera(src="img/show-img-caramar.png")
-        li
+        li.lv-2("data-ref"="bs-1")
           img(src="img/xl3.png")
           .mask
           img.camera(src="img/show-img-caramar.png")
-        li
+        li.lv-2("data-ref"="bs-1")
           img(src="img/xl4.png")
           .mask
           img.camera(src="img/show-img-caramar.png")
-        li
+        li.lv-2("data-ref"="bs-1")
           img(src="img/xl5.png")
           .mask
           img.camera(src="img/show-img-caramar.png")
-        li
+        li.lv-2("data-ref"="bs-1")
           img(src="img/xl6.png")
           .mask
           img.camera(src="img/show-img-caramar.png")
+    .big-show-outer
+      a.close-big-show(href="javascript:void(0)")
+        img(src="img/big-white-close.png")
+      .big-show-wrapper
+        img.big-show#bs-1(src="img/bs-1.jpg")
+
 
 
