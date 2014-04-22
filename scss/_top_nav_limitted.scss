@@ -1,0 +1,27 @@
+@media screen and (max-width: 1460px){
+  .top-nav{
+    .top-menu{
+      position:fixed;
+      top:56px;
+      left:0px;
+      width:100%;
+      background:#b2975b;
+      display:none;
+      li{
+        display:block;
+        margin-left:0px;
+        padding-left:82px;
+        line-height:2em;
+      }
+    }// END .top_menu
+    .icons{
+      li{
+        .top-menu-toggle{
+          display:inline-block;
+          background:url(../img/top_nav/arrow.png) no-repeat 0 8px;
+        }// NED .show-menu
+      }// END li
+
+    }// END .icons
+  }// END .top_nav
+}

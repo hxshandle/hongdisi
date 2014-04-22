@@ -195,8 +195,13 @@
         width:1000px;
         height:701px;
         margin:0 auto;
+        position:relative;
+        overflow:hidden;
         img{
           display:none;
+          position:absolute;
+          left:0px;
+          top:0px;
         }
       }// END .big-show-wrapper
     }// END .big-show-outer
