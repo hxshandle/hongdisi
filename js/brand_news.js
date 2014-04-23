@@ -67,6 +67,7 @@ $(function() {
   }
 
   // handler hover
+  var canClick = true;
   $('.item', root).hover(
   function() {
     $('.icon', $(this)).attr('src', "img/news-active.png");
@@ -76,24 +77,21 @@ $(function() {
       $('.icon', $(this)).attr('src', "img/news.png");
     }
   }).click(function() {
+    if(!canClick){
+      return;
+    }
+    canClick = false;
     var $this = $(this);
     var ref = $this.data('ref');
     var $target = $('#' + ref);
-    if ($target.hasClass('active')) {
-      return;
-    }
     triggleNewsIcon(false);
     $this.addClass('active');
     triggleNewsIcon(true);
-    $('.news.active', root).removeClass('active').hide();
-    /*
-    $target.addClass('active').fadeIn(1000, function() {
-      $('.jScrollPane', $target).jScrollPane();
-    });
-    */
+    $('.news.active', root).stop().removeClass('active').hide();
     $target.fadeIn(1000, function() {
       $target.addClass('active');
       $('.jScrollPane', $target).jScrollPane();
+      canClick = true;
     });
   });
   triggleNewsIcon(true);
