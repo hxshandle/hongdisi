@@ -555,10 +555,29 @@ ul, li {
       font-size: 0px;
       position: absolute;
       top: 1000px;
+      overflow: hidden;
       left: 0;
       z-index: 200;
       background: #fff;
       text-align: center; }
+      #fashion-show .container-fill .xilie .pre-img-xilie {
+        position: absolute;
+        width: 50px;
+        left: 0px;
+        height: 100%;
+        z-index: 204;
+        cursor: pointer; }
+        #fashion-show .container-fill .xilie .pre-img-xilie:hover {
+          background: url("../img/nav-l.png") no-repeat 50% 50%; }
+      #fashion-show .container-fill .xilie .next-img-xilie {
+        position: absolute;
+        width: 50px;
+        right: 0px;
+        height: 100%;
+        z-index: 204;
+        cursor: pointer; }
+        #fashion-show .container-fill .xilie .next-img-xilie:hover {
+          background: url("../img/nav-r.png") no-repeat 50% 50%; }
       #fashion-show .container-fill .xilie .close {
         position: absolute;
         z-index: 203;

@@ -87,6 +87,7 @@ $(function() {
     var _img = $('img', '#' + curXiLie).eq(1);
     var _w = _img.width();
     var _h = _img.height();
+    $('.xilie').css({height:(2*_h+2)+'px'});
     $('.mask', '#' + curXiLie).css({
       width: _w,
       height: _h
@@ -130,17 +131,79 @@ $(function() {
       switchShow(val);
     }
   });
+
+
+  // xilie nav left
+  $('.pre-img-xilie').click(function(){
+    var $this = $(this);
+    var $root = $this.parent('.xilie');
+    var currentPage = $root.data('currentPage');
+    if(currentPage === 0){
+      return;
+    }
+    var imgs = $root.find('li');
+    //show pre page
+    var startIdx = (currentPage-1)*6;
+    for(var i = startIdx; i < startIdx+6;i++){
+      imgs.eq(i).fadeIn(800);
+    }
+    $root.data('currentPage',--currentPage);
+    
+  });
+  
+  // xilie nav right
+  $('.next-img-xilie').click(function(){
+    var $this = $(this);
+    var $root = $this.parent('.xilie');
+    var currentPage = $root.data('currentPage');
+    var pageCount = $root.data('pageCount');
+    if(currentPage == pageCount-1){
+      return;
+    }
+    //hidden current page
+    var imgs = $root.find('li');
+    var startIdx = currentPage * 6;
+    for(var i = startIdx; i < startIdx+6;i++){
+      imgs.eq(i).fadeOut();
+    }
+    $root.data('currentPage',++currentPage);
+
+
+  });
+
   var canShow = true;
+  var currentXilie = null;
+  // Process Xilie page nation
+  function processXiliePagenation(){
+    if(currentXilie == null){
+      return;
+    }
+    var $this = $('#'+currentXilie);
+    if($this.data('processed')){
+      return;
+    }
+    $this.data('processed',true);
+    var imgs = $this.find('li');
+    if(imgs.length > 6){
+      var pageCount = Math.ceil(imgs.length/6);
+      $this.data('pageCount',pageCount);
+      $this.data('currentPage',0);
+    }
+    
+  }
+
   $('.lv-xl').click(function() {
     if (!canShow) {
       return;
     }
     canShow = false;
     var $this = $(this);
+    currentXilie = $this.data('ref');
     $('#' + $this.data('ref')).addClass('active');
     TweenLite.to('#' + $this.data('ref'), 1, {
       top: '0px',
       onComplete: function() {
+        processXiliePagenation();
         canShow = true;
       }
     });
