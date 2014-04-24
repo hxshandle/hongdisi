@@ -145,7 +145,7 @@ $(function() {
     //show pre page
     var startIdx = (currentPage-1)*6;
     for(var i = startIdx; i < startIdx+6;i++){
-      imgs.eq(i).fadeIn(800);
+      imgs.eq(i).fadeIn();
     }
     $root.data('currentPage',--currentPage);
     
@@ -164,7 +164,7 @@ $(function() {
     var imgs = $root.find('li');
     var startIdx = currentPage * 6;
     for(var i = startIdx; i < startIdx+6;i++){
-      imgs.eq(i).fadeOut();
+      imgs.eq(i).fadeOut(100);
     }
     $root.data('currentPage',++currentPage);
 
