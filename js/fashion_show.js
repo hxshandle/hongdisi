@@ -84,14 +84,21 @@ $(function() {
         'margin-right': mr
       });
     });
-    var _img = $('img', '#' + curXiLie).eq(1);
-    var _w = _img.width();
-    var _h = _img.height();
-    $('.xilie').css({height:(2*_h+2)+'px'});
-    $('.mask', '#' + curXiLie).css({
-      width: _w,
-      height: _h
+    $('img', '#' + curXiLie).eq(1).on('load', function() {
+      var _img = $(this);
+      var _w = _img.width();
+      var _h = _img.height();
+      $('.xilie').css({
+        height: (2 * _h + 2) + 'px'
+      });
+      $('.mask', '#' + curXiLie).css({
+        width: _w,
+        height: _h
+      });
     });
+    var $imgSeed = $('img', '#' + curXiLie).eq(1);
+    $imgSeed.attr('src',$imgSeed.attr('src'));
+    
   }
   resizeXiLieImg();
   $(window).resize(resizeXiLieImg);
@@ -132,64 +139,62 @@ $(function() {
     }
   });
 
-
   // xilie nav left
-  $('.pre-img-xilie').click(function(){
+  $('.pre-img-xilie').click(function() {
     var $this = $(this);
     var $root = $this.parent('.xilie');
     var currentPage = $root.data('currentPage');
-    if(currentPage === 0){
+    if (currentPage === 0) {
       return;
     }
     var imgs = $root.find('li');
     //show pre page
-    var startIdx = (currentPage-1)*6;
-    for(var i = startIdx; i < startIdx+6;i++){
+    var startIdx = (currentPage - 1) * 6;
+    for (var i = startIdx; i < startIdx + 6; i++) {
       imgs.eq(i).fadeIn();
     }
-    $root.data('currentPage',--currentPage);
-    
+    $root.data('currentPage', --currentPage);
+
   });
-  
+
   // xilie nav right
-  $('.next-img-xilie').click(function(){
+  $('.next-img-xilie').click(function() {
     var $this = $(this);
     var $root = $this.parent('.xilie');
     var currentPage = $root.data('currentPage');
     var pageCount = $root.data('pageCount');
-    if(currentPage == pageCount-1){
+    if (currentPage == pageCount - 1) {
       return;
     }
     //hidden current page
     var imgs = $root.find('li');
     var startIdx = currentPage * 6;
-    for(var i = startIdx; i < startIdx+6;i++){
+    for (var i = startIdx; i < startIdx + 6; i++) {
       imgs.eq(i).fadeOut(100);
     }
-    $root.data('currentPage',++currentPage);
-
+    $root.data('currentPage', ++currentPage);
 
   });
 
   var canShow = true;
   var currentXilie = null;
   // Process Xilie page nation
-  function processXiliePagenation(){
-    if(currentXilie == null){
+  function processXiliePagenation() {
+    if (currentXilie == null) {
       return;
     }
-    var $this = $('#'+currentXilie);
-    if($this.data('processed')){
+    var $this = $('#' + currentXilie);
+    if ($this.data('processed')) {
       return;
     }
-    $this.data('processed',true);
+    $this.data('processed', true);
     var imgs = $this.find('li');
-    if(imgs.length > 6){
-      var pageCount = Math.ceil(imgs.length/6);
-      $this.data('pageCount',pageCount);
-      $this.data('currentPage',0);
+    if (imgs.length > 6) {
+      var pageCount = Math.ceil(imgs.length / 6);
+      $this.data('pageCount', pageCount);
+      $this.data('currentPage', 0);
     }
-    
+
   }
 
   $('.lv-xl').click(function() {
@@ -242,7 +247,7 @@ $(function() {
     var $this = $(this);
     $this.data('width', $this.width());
     $this.data('height', $this.height());
-  }).each(function(){
+  }).each(function() {
     var $this = $(this);
     this.src = $this.attr('src');
   });
@@ -268,11 +273,11 @@ $(function() {
   }
   function _moveUp($target, h) {
     var _pos = $target.position();
-    if(_pos.top == 0){
+    if (_pos.top == 0) {
       stopMoveUpDown();
       return;
     }
-    var step = _pos.top + 5 < 0 ? 5 : -_pos.top;
+    var step = _pos.top + 5 < 0 ? 5: - _pos.top;
     $target.css({
       top: (_pos.top + step) + 'px'
     });
@@ -285,10 +290,10 @@ $(function() {
     var pos = $target.position();
     var imgHeight = $target.data('height');
     moveInterval = setInterval(function() {
-      if(direction > 0){
-        _moveDown($target,imgHeight);
-      }else{
-        _moveUp($target,imgHeight);
+      if (direction > 0) {
+        _moveDown($target, imgHeight);
+      } else {
+        _moveUp($target, imgHeight);
       }
     },
     20);
@@ -307,7 +312,7 @@ $(function() {
       stopMoveUpDown();
       moveUpDown(1);
     }
-    if(relativeYPosition > 200 && relativeYPosition < 500){
+    if (relativeYPosition > 200 && relativeYPosition < 500) {
       stopMoveUpDown();
     }
   });
