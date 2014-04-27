@@ -17,7 +17,7 @@ $(function() {
 	$('.jScrollPane').jScrollPane();
 	$(".img-liquid-fill").imgLiquid();
 	$(".img-liquid-fill-top").imgLiquid({verticalAlign:'top'});
-	$('.top-menu a,.scroll-down').smoothScroll();
+	$('.top-menu a,.scroll-down').smoothScroll({offset:-76});
 	doResize();
 	$(window).resize(doResize);
 });

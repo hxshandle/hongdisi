@@ -33,11 +33,17 @@
     position:relative;
     #dapian{
       width:100%;
-      display:none;
     }// END #dapian
-    #collocation{
+    .lv1{
+      display:none;
+      &.active{
+        display:block;
+      }
+    }
+    .lv1-collocation{
       width:100%;
       text-align:center;
+      display:none;
       font-size:0px;
       li{
         display:inline-block;
@@ -89,7 +95,65 @@
           }// END .color-bg
         }// END .text-block
       }// END li
-    }// END #collocation
+    }// END .lv1-collocation
+    .lv2-collocation{
+      font-size:0px;
+      overflow:hidden;
+      text-align:center;
+      position:relative;
+      .pre-img-lv2{
+        position:absolute;
+        left:0;
+        width:50px;
+        height:100%;
+        z-index:205;
+        cursor:pointer;
+        &:hover{
+          background: url("../img/nav-l.png") no-repeat 50% 50%;
+        }
+      }
+      .next-img-lv2{
+        position:absolute;
+        right:0;
+        width:50px;
+        height:100%;
+        z-index:205;
+        cursor:pointer;
+        &:hover{
+          background: url("../img/nav-r.png") no-repeat 50% 50%;
+        }
+      }
+        
+        li{
+          display:inline-block;
+          position:relative;
+          img{
+            margin-bottom:1px;
+          }
+          .mask{
+            position:absolute;
+            left:0;
+            top:0;
+            display:block;
+            background:#b2975b;
+            opacity:0;
+            -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+            z-index:202;
+            cursor:pointer;
+          }// NED .mask
+          .camera{
+            position:absolute;
+            top:50%;
+            left:50%;
+            margin-top:-50px;
+            margin-left:-35px;
+            z-index:201;
+            opacity:0;
+            -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+          }
+        }// END li
+
+    }// END .lv2-collocation
     .dp-gallery{
       width:100%;
       height:665px;

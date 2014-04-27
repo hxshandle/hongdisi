@@ -6,6 +6,9 @@
   top:0px;
   display:none;
   z-index:99999;
+  .top-menu-toggle{
+    display:none;
+  }
 
   .brand{
     margin-left:50px;
@@ -47,9 +50,6 @@
         height: 25px;
         margin-left:6px;
       }// END a
-      .top-menu-toggle{
-        display:none;
-      }
       .qq{
         background:url(../img/top_nav/qq1.png);
         &:hover{

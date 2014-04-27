@@ -1,5 +1,15 @@
 @media screen and (max-width: 1460px){
   .top-nav{
+    .top-menu-toggle{
+      display:inline-block;
+      position:absolute;
+      left:50%;
+      background:url(../img/top_nav/arrow.png) no-repeat 0 8px;
+      height:25px;
+      width:25px;
+      margin-top:22px;
+      margin-left:25px;
+    }// END .top-menu-toggle
     .top-menu{
       position:fixed;
       top:56px;
@@ -12,16 +22,8 @@
         margin-left:0px;
         padding-left:82px;
         line-height:2em;
+        text-align:center;
       }
     }// END .top_menu
-    .icons{
-      li{
-        .top-menu-toggle{
-          display:inline-block;
-          background:url(../img/top_nav/arrow.png) no-repeat 0 8px;
-        }// NED .show-menu
-      }// END li
-
-    }// END .icons
   }// END .top_nav
 }
