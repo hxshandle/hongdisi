@@ -1,5 +1,4 @@
 $(function() {
-  var curXiLie = "fs-1";
   var imgW = 1000;
   var offsetLeft = 0;
   function switchShow(val) {
@@ -97,7 +96,7 @@ $(function() {
 
   // resize image xilie
   function resizeXiLieImg() {
-    var root = $('#'+curXiLie+',.lv2-collocation');
+    var root = $('#'+currentXilie+',.lv2-collocation');
     var WW = $(window).width();
     var w = Math.floor((WW - 2) / 3);
     $('img:not(.camera,.close img)', root).each(function(idx, el) {
@@ -109,7 +108,6 @@ $(function() {
     });
   _setImageGalleryHeight(root);
   }
-  resizeXiLieImg($('#'+curXiLie));
   resizeXiLieImg($('.lv2-collocation'));
   $(window).resize(resizeXiLieImg);
 
@@ -247,6 +245,7 @@ $(function() {
       top: '0px',
       onComplete: function() {
         processXiliePagenation();
+        resizeXiLieImg($('#'+currentXilie));
         canShow = true;
       }
     });

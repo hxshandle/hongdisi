@@ -1,5 +1,8 @@
 #main{
   position:relative;
+  #slider{
+    height:100%;
+  }
   .txt-wrapper{
     font-family:dodit;
     color:#fff;
@@ -9,6 +12,7 @@
     top:50%;
     margin-top:-110px;
     position:absolute;
+    z-index:100;
     .h1{
       font-size:60px;
       letter-spacing:24px;

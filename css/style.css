@@ -181,6 +181,8 @@ ul, li {
 
 #main {
   position: relative; }
+  #main #slider {
+    height: 100%; }
   #main .txt-wrapper {
     font-family: dodit;
     color: #fff;
@@ -189,7 +191,8 @@ ul, li {
     right: 130px;
     top: 50%;
     margin-top: -110px;
-    position: absolute; }
+    position: absolute;
+    z-index: 100; }
     #main .txt-wrapper .h1 {
       font-size: 60px;
       letter-spacing: 24px;
