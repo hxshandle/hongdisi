@@ -15,7 +15,7 @@ function doResize() {
 
 function doNivoSlider(){
   $('.nivoSlider').nivoSlider({
-    effect:'sliceUpLeft',
+    effect:'slideInLeft',
     pauseTime:3000,
     directionNav:false,
     controlNav:false,
