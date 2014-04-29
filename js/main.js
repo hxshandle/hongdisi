@@ -15,8 +15,9 @@ function doResize() {
 
 function doNivoSlider(){
   $('.nivoSlider').nivoSlider({
-    effect:'slideInLeft',
-    pauseTime:3000,
+    effect:'fade',
+    pauseTime:5000,
+    animSpeed:1500,
     directionNav:false,
     controlNav:false,
     pauseOnHover:false
@@ -31,5 +32,9 @@ $(function() {
 	doResize();
 	$(window).resize(doResize);
   doNivoSlider();
+  $('#landing-scroll-down').click(function(){
+    var $this = $(this);
+    $this.fadeOut(10).delay(2000).fadeIn();
+  });
 });
 

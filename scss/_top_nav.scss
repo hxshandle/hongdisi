@@ -28,6 +28,7 @@
         color:#fff;
         font-size:12px;
         text-decoration: none;
+        margin-top:26px;
         &:hover{
           text-decoration: underline;
         }
@@ -49,6 +50,7 @@
         width: 25px;
         height: 25px;
         margin-left:6px;
+        margin-top:26px;
       }// END a
       .qq{
         background:url(../img/top_nav/qq1.png);
@@ -81,14 +83,17 @@
       margin-right:10px;
       width:0px;
       border:0px;
+      padding:0;
+      height:25px;
     }
     .search-icon{
       display: inline-block;
-      margin-top:19px;
+      margin-top:27px;
       width: 25px;
-      height: 23px;
-      line-height: 23px;
-      background:url(../img/top_nav/search_icon.png);
+      height: 25px;
+      line-height: 25px;
+      background:url(../img/top_nav/search_icon.png) no-repeat;
+      margin-bottom:-10px;
     }
 
   }//END .search
