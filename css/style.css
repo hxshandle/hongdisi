@@ -54,8 +54,7 @@ ul, li {
       .top-nav .top-menu li a {
         color: #fff;
         font-size: 12px;
-        text-decoration: none;
-        margin-top: 26px; }
+        text-decoration: none; }
         .top-nav .top-menu li a:hover {
           text-decoration: underline; }
   .top-nav .icons {
