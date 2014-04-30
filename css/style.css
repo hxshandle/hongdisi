@@ -143,14 +143,11 @@ ul, li {
     text-align: center;
     padding-top: 180px; }
     .landing-section .content .split {
-      background: url(../img/langding-split.png) no-repeat 50% 50%;
       height: 29px; }
     .landing-section .content .split-1 {
-      background: url(../img/langding-split2.png) no-repeat 50% 0px;
       height: 10px;
       margin-top: 18px; }
     .landing-section .content .split-2 {
-      background: url(../img/langding-split2.png) no-repeat 50% 0px;
       height: 10px; }
     .landing-section .content .logo {
       display: block;
