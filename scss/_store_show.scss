@@ -50,9 +50,7 @@
       height:100%;
       z-index:100;
       cursor:pointer;
-      &:hover{
-        background:url('../img/nav-l.png') no-repeat 50% 50%;
-      }
+      background:url('../img/nav-l.png') no-repeat 50% 50%;
     }// END .pre-img
     .next-img{
       width:60px;
@@ -61,9 +59,7 @@
       height:100%;
       z-index:100;
       cursor:pointer;
-      &:hover{
-        background:url('../img/nav-r.png') no-repeat 50% 50%;
-      }
+      background:url('../img/nav-r.png') no-repeat 50% 50%;
     }// END .pre-img
     .store-show{
       position:absolute;

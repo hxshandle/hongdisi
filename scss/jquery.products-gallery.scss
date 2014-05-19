@@ -1,0 +1,41 @@
+.products-gallery{
+  .products-gallery-nav-btn{
+    display:block;
+    position:absolute;
+    top:50%;
+    width:30px;
+    height:60px;
+  }
+  .products-gallery-pre{
+    background:url(../img/series_left.png) no-repeat 50% 50%;
+    left:30px;
+  }
+  .products-gallery-next{
+    background:url(../img/series_right.png) no-repeat 50% 50%;
+    right:30px;
+  }
+  position:relative;
+  .products-gallery-container{
+    overflow:hidden;
+    height:100%;
+    position:relative;
+    ul{
+      list-style:none;
+      overflow:hidden;
+      margin:0;
+      padding:0;
+      position:absolute;
+      .prod-item{
+        list-style:none;
+        margin:0;
+        padding:0;
+        float:left;
+        img{
+          width: inherit;  /* This makes the next two lines work in IE8. */
+          max-width: 100%;
+          height: auto;   
+        }
+      }// .prod-item
+    }// ul
+  }// .products-gallery-container
+}

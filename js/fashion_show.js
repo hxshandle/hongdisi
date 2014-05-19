@@ -72,16 +72,15 @@ $(function() {
   }
   placeImageGallery();
 
-
-  function _setImageGalleryHeight(root){
+  function _setImageGalleryHeight(root) {
     var $imgSeed = $('img:not(.camera,.close img)', root).eq(1);
     var src = $imgSeed.attr('src');
     var img = new Image();
-    img.onload = function(){
+    img.onload = function() {
       var _w = this.width;
       var _h = this.height;
       var w = Math.floor((WW - 2) / 3);
-      var h = Math.floor(_h*w/_w);
+      var h = Math.floor(_h * w / _w);
       root.css({
         height: (2 * h + 2) + 'px'
       });
@@ -90,13 +89,13 @@ $(function() {
         height: h
       });
     }
-    img.src=src;
+    img.src = src;
 
   }
 
   // resize image xilie
   function resizeXiLieImg() {
-    var root = $('#'+currentXilie+',.lv2-collocation');
+    var root = $('#' + currentXilie + ',.lv2-collocation');
     var WW = $(window).width();
     var w = Math.floor((WW - 2) / 3);
     $('img:not(.camera,.close img)', root).each(function(idx, el) {
@@ -106,7 +105,7 @@ $(function() {
         'margin-right': mr
       });
     });
-  _setImageGalleryHeight(root);
+    //_setImageGalleryHeight(root);
   }
   resizeXiLieImg($('.lv2-collocation'));
   $(window).resize(resizeXiLieImg);
@@ -147,7 +146,7 @@ $(function() {
     }
   });
 
-  function _pre(el,root){
+  function _pre(el, root) {
     var $this = $(el);
     var $root = $this.parent(root);
     var currentPage = $root.data('currentPage');
@@ -163,7 +162,7 @@ $(function() {
     $root.data('currentPage', --currentPage);
   }
 
-  function _next(el,root){
+  function _next(el, root) {
     var $this = $(el);
     var $root = $this.parent(root);
     var currentPage = $root.data('currentPage');
@@ -182,25 +181,25 @@ $(function() {
 
   // xilie nav left
   $('.pre-img-xilie').click(function() {
-    _pre(this,'.xilie');
+    _pre(this, '.xilie');
 
   });
   // xilie nav right
   $('.next-img-xilie').click(function() {
-    _next(this,'.xilie');
+    _next(this, '.xilie');
   });
   // lv2 nav left
   $('.pre-img-lv2').click(function() {
-    _pre(this,'.lv2-collocation');
+    _pre(this, '.lv2-collocation');
 
   });
   // lv2 nav right
   $('.next-img-lv2').click(function() {
-    _next(this,'.lv2-collocation');
+    _next(this, '.lv2-collocation');
   });
 
-  function processlv2collocation(){
-    $('.lv2-collocation').each(function(){
+  function processlv2collocation() {
+    $('.lv2-collocation').each(function() {
       var $this = $(this);
       var imgs = $this.find('li');
       if (imgs.length > 6) {
@@ -245,7 +244,7 @@ $(function() {
       top: '0px',
       onComplete: function() {
         processXiliePagenation();
-        resizeXiLieImg($('#'+currentXilie));
+        resizeXiLieImg($('#' + currentXilie));
         canShow = true;
       }
     });
@@ -265,6 +264,29 @@ $(function() {
       top: '0px'
     });
   });
+
+  function _dispBigImg(src) {
+    var _img = new Image();
+    _img.onload = function() {
+      $('.big-show-wrapper .big-show').attr('src', src).css({
+        top: 0
+      });
+    }
+    _img.src = src;
+  }
+
+  function showBigImg() {
+    var $this = $(this);
+    var ref = $this.data('ref');
+    _dispBigImg(ref);
+    var ulId = $this.parent().eq(0).attr('id');
+    var $bsw = $('.big-show-wrapper').eq(0);
+    $bsw.data('ref', ulId);
+    $bsw.data('idx', $this.index());
+    TweenLite.to('.big-show-outer', 1, {
+      top: '0px'
+    });
+  }
   // close level 3
   $('.close').click(function() {
     var $this = $(this);
@@ -352,6 +374,35 @@ $(function() {
     if (relativeYPosition > 300 && relativeYPosition < 400) {
       stopMoveUpDown();
     }
+  });
+
+  function _changeBigImg(driection) {
+    var $bsw = $('.big-show-wrapper').eq(0);
+    var refId = $bsw.data('ref');
+    var $ref = $('#' + refId).eq(0);
+    var $children = $ref.children();
+    var curIdx = $bsw.data('idx');
+    if (curIdx == 0 && driection < 0) {
+      return;
+    }
+    if (curIdx == $children.length - 1 && driection > 0) {
+      return;
+    }
+    var src = $ref.children().eq(curIdx + driection).eq(0).data('ref');
+    _dispBigImg(src);
+    $bsw.data('idx', curIdx + driection);
+  }
+  // big show image trail
+  $('.big-nav-l').click(function() {
+    _changeBigImg( - 1);
+  });
+  $('.big-nav-r').click(function() {
+    _changeBigImg(1);
+  });
+
+  $('.prod-gallery').productsGallery({
+    itemClick: showBigImg,
+    height: 530
   });
 
 });

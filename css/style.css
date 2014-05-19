@@ -459,18 +459,16 @@ ul, li {
     position: absolute;
     height: 100%;
     z-index: 100;
-    cursor: pointer; }
-    #store-show .img-gallery .pre-img:hover {
-      background: url("../img/nav-l.png") no-repeat 50% 50%; }
+    cursor: pointer;
+    background: url("../img/nav-l.png") no-repeat 50% 50%; }
   #store-show .img-gallery .next-img {
     width: 60px;
     right: 0px;
     position: absolute;
     height: 100%;
     z-index: 100;
-    cursor: pointer; }
-    #store-show .img-gallery .next-img:hover {
-      background: url("../img/nav-r.png") no-repeat 50% 50%; }
+    cursor: pointer;
+    background: url("../img/nav-r.png") no-repeat 50% 50%; }
   #store-show .img-gallery .store-show {
     position: absolute;
     width: 10000px;
@@ -567,18 +565,16 @@ ul, li {
         width: 50px;
         height: 100%;
         z-index: 205;
-        cursor: pointer; }
-        #fashion-show .container-fill .lv2-collocation .pre-img-lv2:hover {
-          background: url("../img/nav-l.png") no-repeat 50% 50%; }
+        cursor: pointer;
+        background: url("../img/nav-l.png") no-repeat 50% 50%; }
       #fashion-show .container-fill .lv2-collocation .next-img-lv2 {
         position: absolute;
         right: 0;
         width: 50px;
         height: 100%;
         z-index: 205;
-        cursor: pointer; }
-        #fashion-show .container-fill .lv2-collocation .next-img-lv2:hover {
-          background: url("../img/nav-r.png") no-repeat 50% 50%; }
+        cursor: pointer;
+        background: url("../img/nav-r.png") no-repeat 50% 50%; }
       #fashion-show .container-fill .lv2-collocation li {
         display: inline-block;
         position: relative; }
@@ -618,18 +614,16 @@ ul, li {
         position: absolute;
         height: 100%;
         z-index: 100;
-        cursor: pointer; }
-        #fashion-show .container-fill .dp-gallery .pre-img:hover {
-          background: url("../img/nav-l.png") no-repeat 50% 50%; }
+        cursor: pointer;
+        background: url("../img/nav-l.png") no-repeat 50% 50%; }
       #fashion-show .container-fill .dp-gallery .next-img {
         width: 60px;
         right: 0px;
         position: absolute;
         height: 100%;
         z-index: 100;
-        cursor: pointer; }
-        #fashion-show .container-fill .dp-gallery .next-img:hover {
-          background: url("../img/nav-r.png") no-repeat 50% 50%; }
+        cursor: pointer;
+        background: url("../img/nav-r.png") no-repeat 50% 50%; }
       #fashion-show .container-fill .dp-gallery .dp-show {
         position: absolute;
         width: 10000px;
@@ -649,24 +643,22 @@ ul, li {
         left: 0px;
         height: 100%;
         z-index: 204;
-        cursor: pointer; }
-        #fashion-show .container-fill .xilie .pre-img-xilie:hover {
-          background: url("../img/nav-l.png") no-repeat 50% 50%; }
+        cursor: pointer;
+        background: url("../img/nav-l.png") no-repeat 50% 50%; }
       #fashion-show .container-fill .xilie .next-img-xilie {
         position: absolute;
         width: 50px;
         right: 0px;
         height: 100%;
         z-index: 204;
-        cursor: pointer; }
-        #fashion-show .container-fill .xilie .next-img-xilie:hover {
-          background: url("../img/nav-r.png") no-repeat 50% 50%; }
+        cursor: pointer;
+        background: url("../img/nav-r.png") no-repeat 50% 50%; }
       #fashion-show .container-fill .xilie .close {
         position: absolute;
         z-index: 203;
-        top: 15px;
-        right: 15px;
-        color: #fff;
+        top: 0px;
+        right: 30px;
+        color: #000;
         font-size: 36px;
         text-decoration: none; }
       #fashion-show .container-fill .xilie ul {
@@ -703,6 +695,16 @@ ul, li {
       width: 100%;
       z-index: 300;
       background: #d9bea1; }
+      #fashion-show .container-fill .big-show-outer .big-nav-l, #fashion-show .container-fill .big-show-outer .big-nav-r {
+        position: absolute;
+        top: 50%;
+        display: block;
+        width: 30px;
+        height: 60px; }
+      #fashion-show .container-fill .big-show-outer .big-nav-l {
+        left: 30px; }
+      #fashion-show .container-fill .big-show-outer .big-nav-r {
+        right: 30px; }
       #fashion-show .container-fill .big-show-outer .close-big-show {
         position: absolute;
         right: 15px;
@@ -715,7 +717,6 @@ ul, li {
         position: relative;
         overflow: hidden; }
         #fashion-show .container-fill .big-show-outer .big-show-wrapper img {
-          display: none;
           position: absolute;
           left: 0px;
           top: 0px; }

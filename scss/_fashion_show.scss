@@ -108,9 +108,7 @@
         height:100%;
         z-index:205;
         cursor:pointer;
-        &:hover{
-          background: url("../img/nav-l.png") no-repeat 50% 50%;
-        }
+        background: url("../img/nav-l.png") no-repeat 50% 50%;
       }
       .next-img-lv2{
         position:absolute;
@@ -119,9 +117,7 @@
         height:100%;
         z-index:205;
         cursor:pointer;
-        &:hover{
-          background: url("../img/nav-r.png") no-repeat 50% 50%;
-        }
+        background: url("../img/nav-r.png") no-repeat 50% 50%;
       }
         
         li{
@@ -171,9 +167,7 @@
         height:100%;
         z-index:100;
         cursor:pointer;
-        &:hover{
-          background:url('../img/nav-l.png') no-repeat 50% 50%;
-        }
+        background:url('../img/nav-l.png') no-repeat 50% 50%;
       }// END .pre-img
       .next-img{
         width:60px;
@@ -182,9 +176,7 @@
         height:100%;
         z-index:100;
         cursor:pointer;
-        &:hover{
-          background:url('../img/nav-r.png') no-repeat 50% 50%;
-        }
+        background:url('../img/nav-r.png') no-repeat 50% 50%;
       }// END .pre-img
       .dp-show{
         position:absolute;
@@ -208,9 +200,7 @@
         height:100%;
         z-index:204;
         cursor:pointer;
-        &:hover{
-          background: url("../img/nav-l.png") no-repeat 50% 50%;
-        }
+        background: url("../img/nav-l.png") no-repeat 50% 50%;
       }
       .next-img-xilie{
         position:absolute;
@@ -219,16 +209,14 @@
         height:100%;
         z-index:204;
         cursor:pointer;
-        &:hover{
-          background: url("../img/nav-r.png") no-repeat 50% 50%;
-        }
+        background: url("../img/nav-r.png") no-repeat 50% 50%;
       }
       .close{
         position:absolute;
         z-index:203;
-        top:15px;
-        right:15px;
-        color:#fff;
+        top:0px;
+        right:30px;
+        color:#000;
         font-size:36px;
         text-decoration:none;
       }// END .close
@@ -272,6 +260,19 @@
       width:100%;
       z-index:300;
       background:#d9bea1;
+      .big-nav-l,.big-nav-r{
+        position:absolute;
+        top:50%;
+        display:block;
+        width:30px;
+        height:60px;
+      }
+      .big-nav-l{
+        left:30px;
+      }
+      .big-nav-r{
+        right:30px;
+      }
       .close-big-show{
         position:absolute;
         right:15px;
@@ -285,7 +286,6 @@
         position:relative;
         overflow:hidden;
         img{
-          display:none;
           position:absolute;
           left:0px;
           top:0px;
