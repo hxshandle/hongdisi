@@ -30,14 +30,14 @@
           .color-bg
             span.yahei 春季
             span.didot-ital Spring
-      li.mr.lv-xl("data-ref"="fs-2")
+      li.mr.lv-xl("data-ref"="fs-3")
         img(src="img/fs-2.jpg")
         a.mask
         .txt-block
           .color-bg
             span.yahei 夏季
             span.didot-ital Summer
-      li.lv-xl("data-ref"="fs-2")
+      li.lv-xl("data-ref"="fs-4")
         img(src="img/fs-3.jpg")
         a.mask
         .txt-block
@@ -52,14 +52,14 @@
           .color-bg
             span.yahei 春季
             span.didot-ital Spring
-      li.mr.lv-xl("data-ref"="fs-1")
+      li.mr.lv-xl("data-ref"="fs-5")
         img(src="img/fs-2.jpg")
         a.mask
         .txt-block
           .color-bg
             span.yahei 夏季
             span.didot-ital Summer
-      li.lv-xl("data-ref"="fs-1")
+      li.lv-xl("data-ref"="fs-6")
         img(src="img/fs-1.jpg")
         a.mask
         .txt-block
@@ -97,6 +97,42 @@
       .prod-gallery
         .prod-container
           ul#fs-2-img-lisg
+            - for (var i = 0; i < 20; i++)
+              li(data-ref=refImgs[i%2])
+                a(href="javascript:void(0)")
+                  img(src=imgs[i%4])
+    .xilie#fs-3
+      a.close(href="javascript:void(0)") X
+      .prod-gallery
+        .prod-container
+          ul#fs-3-img-lisg
+            - for (var i = 0; i < 20; i++)
+              li(data-ref=refImgs[i%2])
+                a(href="javascript:void(0)")
+                  img(src=imgs[i%4])
+    .xilie#fs-4
+      a.close(href="javascript:void(0)") X
+      .prod-gallery
+        .prod-container
+          ul#fs-4-img-lisg
+            - for (var i = 0; i < 20; i++)
+              li(data-ref=refImgs[i%2])
+                a(href="javascript:void(0)")
+                  img(src=imgs[i%4])
+    .xilie#fs-5
+      a.close(href="javascript:void(0)") X
+      .prod-gallery
+        .prod-container
+          ul#fs-5-img-lisg
+            - for (var i = 0; i < 20; i++)
+              li(data-ref=refImgs[i%2])
+                a(href="javascript:void(0)")
+                  img(src=imgs[i%4])
+    .xilie#fs-6
+      a.close(href="javascript:void(0)") X
+      .prod-gallery
+        .prod-container
+          ul#fs-6-img-lisg
             - for (var i = 0; i < 20; i++)
               li(data-ref=refImgs[i%2])
                 a(href="javascript:void(0)")
